@@ -1,5 +1,93 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,700&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+  position: relative;
+}
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.logotype {
+  font-size: 25px;
+  color: #ff9000;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.menu ul li {
+  position: relative;
+  float: left;
+}
+
+.menu ul li a {
+  font-size: 18px;
+  padding: 20px;
+  font-weight: 700;
+  color: #1d1d1d;
+  display: block;
+}
+
+.menu ul li a:hover {
+  color: #ff9000;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icon {
+  width: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu #cart-detail {
+  display: none;
+}
+
+.submenu:hover #cart-detail {
+  display: block;
+  position: absolute;
+  right: 0;
+  backdrop-filter: blur(10px);
+  top: 100%;
+  z-index: 1;
+  background-color: #7777;
+  padding: 20px;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* https://www.youtube.com/watch?v=6fqxL6dhHiI 40:19 */
